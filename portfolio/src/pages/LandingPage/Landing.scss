@@ -1,0 +1,27 @@
+.Landing{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C2C2C;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+    .Content{
+    
+        .Name{
+            font-size: 96px;
+            margin: 0 0 0 150px;
+        }
+    
+        .Title{
+            font-size: 48px;
+            margin: -20px 0 0 150px;
+        }
+
+        .Button{
+            font-size: 36px;
+            margin: 50px 0 0 150px;
+        }
+    }
+}
