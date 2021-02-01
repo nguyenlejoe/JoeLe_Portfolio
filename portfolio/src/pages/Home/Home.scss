@@ -6,22 +6,136 @@
     overflow-x: hidden;
 
     .HeaderCont{
-        height: 15%;
-
+        height: 14%;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+        background-color:#252525;
         :nth-child(2){
-            font-size:20px;
+          font-size:25px;
+        }
+        .NavBar{
+            height:100%;
+        }
+
+        .Menu{
+            display: none;
         }
     }
     
     .Content{
         height: 80%;
         display:flex;
-        flex-direction: column;
         align-items:center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+
         
+        .Title{
+            width:50%;
+            min-width:300px;;
+            max-width:800px;
+            
+
+            .Name{
+                font-size: 96px;
+            }
+            .Position{
+                margin-top: -10px;;
+                font-size: 48px;  
+            }
+            .Bio{
+                font-size: 18px;  
+                
+            }
+        }
+
+        .Competencies{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:60%;
+            min-width:300px;;
+            max-width:600px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Home{
+        .HeaderCont{
+            .NavBar{
+                display:none;
+            }
+            .Menu{
+                height: 100%;
+                justify-content: flex-end;
+                margin-right:5%;
+                align-items: center;
+                display: flex;
+
+                .Logo{
+                    position: fixed;
+                    left:10px;
+                    :nth-child(1){
+                        width:80px;
+                        height:80px;
+                        text-align: center;
+                        padding-top:10px;
+                        font-size:50px;
+                    }
+                }   
+            }
+        }
         
-        .ProfileCard{
-            margin-top: 100px;
+        .Content{
+         
+            
+            .Title{
+                text-align: center;
+                margin:10%;
+                .Name{
+                    font-size: 2rem;
+                }
+                .Position{
+                    margin-top:6px;
+                    font-size: 22px;  
+                }
+                .Bio{
+                    font-size: 14px;  
+                    
+                }
+            }
+    
         }
     }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .Home{
+        
+        .Content{
+         
+            
+            .Title{
+                margin:10%;
+                .Name{
+                    text-align: center;
+                    font-size: 60px;
+                }
+                .Position{
+                    text-align: center;
+                    margin-top:6px;
+                    font-size: 32px;  
+                }
+                .Bio{
+                    font-size: 14px;  
+                    
+                }
+            }
+    
+        }
+    }
+
 }

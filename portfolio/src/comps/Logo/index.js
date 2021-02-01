@@ -10,8 +10,7 @@ const LogoCont = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-left:80px;
-    color:#6AD2FF;
+    color:#6AD2FF; 
 `;
 
 const ContentCont = styled.div`
@@ -20,7 +19,7 @@ const ContentCont = styled.div`
 
 const Logo = ({text}) =>{
     return (
-        <Link style={{ textDecoration: 'none' , color:'white' }}  to="/Home">
+        <Link style={{ textDecoration: 'none' , color:'white' }}  to="/">
         <LogoCont>
            <ContentCont>JL</ContentCont>
         </LogoCont>

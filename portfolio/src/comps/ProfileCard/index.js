@@ -1,15 +1,24 @@
-import React from 'react';
+import React , {useEffect, useState} from 'react';
 import styled from 'styled-components';
 
 const ProfileCont = styled.div`
-    width: 912px;
-    height: 300px;
+    width:100%;
+    min-width:300px;
+    max-width:450px;
+    height:100%;
     background: #252525;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 51px;
     display:flex;
+    flex-direction:column;
     padding:50px;
     align-items:center;
+`;
+
+const ProfileTitle = styled.div`
+    h1{
+        font-weight:normal;
+    }
 `;
 
 const Avatar = styled.div`
@@ -19,48 +28,64 @@ const Avatar = styled.div`
     border-radius:200px;
     background-image:url(/me.png);
     background-size:cover;
-    margin-left:50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     
 `;
 
 const ContentCont = styled.div`
-    width:60%;
-    height:80%;
-    margin-left:100px;
+    background: #252525;
+    height:200px;
+    width:100%;
+    display:flex;
+    margin:10px;
 `;
 
-const TitleCont = styled.div`
-    margin-top:-25px;    
-    h2{
-        font-weight:normal;
-        margin-top:-20px;
-    }
-    h1{
-        font-weight:normal;
-    }
-    hr{
-        width:100%;
-        border-color:#6AD2FF;
-    }
+const TitleCont = styled.div` 
+        display:flex;
+        flex-direction:column;
+        width:25%;
+        height:100%;
+        justify-content:space-between;
+        font-size:18px;
+
 `;
 
-const BioCont = styled.p`
-    
-`;
+const GraphCont = styled.div`
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:100%;
+    justify-content:space-between;
+`
+
+const GraphBox = styled.div`
+    height:10%;
+    width:${props=>props.width ? props.width : "0px"};
+    background-color:#6AD2FF;
+    margin-left:20px;
+`
+
 
 const ProfileCard = ({text}) =>{
+    
+
     return (
         <ProfileCont>
             <Avatar></Avatar>
+            <ProfileTitle><h1>Competencies</h1></ProfileTitle>
             <ContentCont>
                 <TitleCont>
-                    <h1>Tan (Joe) Le</h1>
-                    <h2>Front-End Web Developer</h2>
-                    <hr></hr>
-                    <BioCont>
-                    A BCIT student striving to join the ever growing technology industry with an active passion for computing and web/app development. Strong problem-solving and leadership skills from participating in multiple team projects. Hard working and is always willing to learn more.                    </BioCont>
+                <label>REACT</label>
+                <label>Javascript</label>
+                <label>HTML</label>
+                <label>CSS</label>
                 </TitleCont>
-                
+                 <GraphCont>
+                    <GraphBox width="100%"></GraphBox>
+                    <GraphBox width="90%"></GraphBox>
+                    <GraphBox width="90%"></GraphBox>
+                    <GraphBox width="70%"></GraphBox>
+                </GraphCont>
             </ContentCont>
         </ProfileCont>
     );
