@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import Logo from '../Logo';
 import {Link} from 'react-router-dom';
 
@@ -30,6 +30,12 @@ const NavButtons = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+
+    ${props => props.active === true && css`
+        border-bottom: 2px solid #6AD2FF;
+        color:#6AD2FF;
+        border-spacing: 25px;
+    `}
   
 `;
 

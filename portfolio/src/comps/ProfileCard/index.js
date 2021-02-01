@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 const ProfileCont = styled.div`
     width:100%;
+    margin-right:10px;
     min-width:300px;
-    max-width:450px;
+    max-width:350px;
     height:100%;
     background: #252525;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
@@ -22,8 +23,8 @@ const ProfileTitle = styled.div`
 `;
 
 const Avatar = styled.div`
-    width: 261px;
-    height: 261px;
+    width: 220px;
+    height: 220px;
     background-color:white;
     border-radius:200px;
     background-image:url(/me.png);
