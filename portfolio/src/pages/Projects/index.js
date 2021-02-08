@@ -2,12 +2,18 @@ import React from 'react';
 import '../../App.scss';
 import Header from '../../comps/Header';
 import ProjectCard from '../../comps/ProjectCard';
+import Menu from '../../comps/HamburgerMenu';
+import Logo from '../../comps/Logo';
 
 export default function ProjectsPage(){
     return (
         <div className="Project">
             <div className="HeaderCont">
-                <Header ProjectsActive={true}></Header>
+            <div className="NavBar"><Header ProjectsActive={true}></Header></div>
+                <div className="Menu">
+                    <div className="Logo"><Logo/></div>
+                    <Menu ProjectsActive={true}></Menu>
+                </div> 
             </div>
             <div className="Content">
                 <ProjectCard 

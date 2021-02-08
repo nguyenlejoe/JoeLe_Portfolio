@@ -36,7 +36,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .Home{
+    .Project{
         .HeaderCont{
             position: sticky;
             top:0;
@@ -66,40 +66,19 @@
         }
         
         .Content{
-            margin-top:-20px;
-       
+        
+        
         }
     }
 
 }
 
 @media only screen and (max-width: 700px) {
-    .Home{
+    .Project{
         
         .Content{
             
-            
-            .Title{
-                margin:10%;
-                .Name{
-                    text-align: center;
-                    font-size: 60px;
-                }
-                .Position{
-                    text-align: center;
-                    margin-top:6px;
-                    font-size: 32px;  
-                }
-                .Bio{
-                    margin-top:20px;
-                    font-size: 16px;  
-                    text-align: center;
-                }
-            }
-
-            .Competencies{
-                margin-top:-40px;
-            }
+       
     
         }
     }
