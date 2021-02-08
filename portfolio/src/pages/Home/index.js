@@ -12,7 +12,7 @@ export default function HomePage(){
                 <div className="NavBar"><Header HomeActive={true}></Header></div>
                 <div className="Menu">
                     <div className="Logo"><Logo/></div>
-                    <Menu></Menu>
+                    <Menu HomeActive={true}></Menu>
                 </div> 
             </div>
             <div className="Content">
