@@ -69,6 +69,8 @@ const ProjectCard = ({title, subhead, bgimg, desc, delayAni}) => {
             transition: {
                 type:"spring",
                 stiffness:90,
+                mass:0.8,
+                damping:9,
                 delay:delayAni
             }
         },
@@ -76,15 +78,15 @@ const ProjectCard = ({title, subhead, bgimg, desc, delayAni}) => {
 
     return (
         <AnimationCont
-        variants={variants}
-        initial="hidden"
-        animate="visible"
-        whileHover={{
-            scale:1.1,
-            transition:{
-                duration:.2
-            }
-        }}
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            whileHover={{
+                scale:1.1,
+                transition:{
+                    duration:.2
+                }
+            }}
         >
         <ProjectCont>
             <ProjectImage bgimg={bgimg}></ProjectImage>
