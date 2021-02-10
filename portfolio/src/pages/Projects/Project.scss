@@ -40,7 +40,7 @@
         .HeaderCont{
             position: sticky;
             top:0;
-        
+            
             .NavBar{
                 display:none;
             }
@@ -66,8 +66,8 @@
         }
         
         .Content{
-        
-        
+        position: relative;
+        right: 4%;
         }
     }
 
@@ -77,9 +77,8 @@
     .Project{
         
         .Content{
-            
-       
-    
+            position: relative;
+            right: 4%;   
         }
     }
 

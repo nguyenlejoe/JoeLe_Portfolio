@@ -71,6 +71,7 @@
         .HeaderCont{
             position: sticky;
             top:0;
+            z-index: 100;
         
             .NavBar{
                 display:none;
@@ -98,6 +99,8 @@
         
         .Content{
             margin-top:-20px;
+            position: relative;
+            right: 4%;
             
             .Title{
                 text-align: center;

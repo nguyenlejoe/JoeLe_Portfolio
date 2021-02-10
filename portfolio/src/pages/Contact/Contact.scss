@@ -1,19 +1,89 @@
-.Contact{
+.Contact-Page{
     height: 100vh;
     width: 100vw;
     background-color: #2C2C2C;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 
     .HeaderCont{
+        position: sticky;
+        top:0;
         height: 14%;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+        background-color:#252525;
+        z-index: 2;
         :nth-child(2){
           font-size:25px;
+        }
+        .NavBar{
+            height:100%;
+        }
+
+        .Menu{
+            display: none;
         }
     }
     
     .Content{
         height: 80%;
-        
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .Contact-Page{
+        .HeaderCont{
+            position: sticky;
+            top:0;
+        
+            .NavBar{
+                display:none;
+            }
+            .Menu{
+                height: 100%;
+                justify-content: flex-end;
+                margin-right:5%;
+                align-items: center;
+                display: flex;
+
+                .Logo{
+                    position: relative;
+                    right:70%;
+                    :nth-child(1){
+                        width:80px;
+                        height:80px;
+                        text-align: center;
+                        padding-top:10px;
+                        font-size:50px;
+                    }
+                }   
+            }
+        }
+        
+        .Content{
+            position: relative;
+            right: 4%;
+        
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .Contact-Page{
+        
+        .Content{
+            
+            position: relative;
+            right: 4%;
+    
+        }
+    }
+
 }
