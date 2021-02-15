@@ -51,8 +51,8 @@ export default function HomeChef(){
                     text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
                     "
-                    bgimg1="./home1.png"
-                    bgimg2="./home2.png"
+                    bgimg1="./finalhom1.png"
+                    bgimg2="./finalhome2.png"
                 />
               </div>  
               
