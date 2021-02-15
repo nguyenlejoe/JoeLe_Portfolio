@@ -5,12 +5,15 @@ import ProjectCard from '../../comps/ProjectCard';
 import Menu from '../../comps/HamburgerMenu';
 import Logo from '../../comps/Logo';
 import {motion} from "framer-motion";
+import {useHistory} from "react-router-dom";
 
 export default function ProjectsPage(){
     const variants = {
         hidden:{opacity:0},
         visible:{opacity:1}
     }
+
+    const history = useHistory();
 
     return (
         <div className="Project">
@@ -27,6 +30,7 @@ export default function ProjectsPage(){
                         subhead="Water Usage Application"
                         bgimg="./MAJI.png"
                         delayAni="0.2"
+                        
                         desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                     />
                 <ProjectCard 
@@ -34,6 +38,9 @@ export default function ProjectsPage(){
                     subhead="Food Marketplace Platform"
                     bgimg="./homechef.png"
                     delayAni="0.4"
+                    onClick={()=>{
+                        history.push("/HomeChef")
+                    }}
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                 />
                 <ProjectCard 

@@ -5,6 +5,7 @@ import HomePage from './pages/Home';
 import LandingPage from './pages/LandingPage';
 import ProjectPage from './pages/Projects';
 import ContactPage from './pages/Contact';
+import HomeChef from './pages/HomeChef';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact component={HomePage}/>
         <Route path="/Projects" exact component={ProjectPage}/>
         <Route path="/Contact" exact component={ContactPage}/>
+        <Route path="/HomeChef" exact component={HomeChef}/>
       </Switch>
     </Router>
   );

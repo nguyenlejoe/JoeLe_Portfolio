@@ -24,6 +24,11 @@ const ProjectCont = styled.div`
     justify-content:center;
     margin:5%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.85));
+
+    &:hover{
+ 
+    color:#6AD2FF;
+    }
 `
 
 const ProjectImage = styled.div`
@@ -55,7 +60,7 @@ const ProjectType = styled.div`
 
 
 
-const ProjectCard = ({title, subhead, bgimg, desc, delayAni}) => {
+const ProjectCard = ({title, subhead, bgimg, desc, delayAni, onClick}) => {
 
     const variants = {
         hidden:{
@@ -88,7 +93,7 @@ const ProjectCard = ({title, subhead, bgimg, desc, delayAni}) => {
                 }
             }}
         >
-        <ProjectCont>
+        <ProjectCont onClick={onClick}>
             <ProjectImage bgimg={bgimg}></ProjectImage>
             <ProjectTitle>{title}</ProjectTitle>
             <ProjectType>{subhead}</ProjectType>

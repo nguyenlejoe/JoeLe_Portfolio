@@ -17,9 +17,9 @@ const ContactCont = styled.div`
 `;
 
 const ContactBox = styled.div`
-    width:45%;
-    height:30%;
-    margin:10px;
+    width:33%;
+    height:25%;
+    margin:2%;
 `;
 
 const ContactLabel = styled.div`
@@ -27,7 +27,7 @@ const ContactLabel = styled.div`
 `;
 
 const ContactInput = styled.input`
-    width:90%;
+    width:100%;
     height:30%;
     margin-top:2%;
     max-width:${props => props.width ? props.width : "50%"}
@@ -41,8 +41,8 @@ const ContactInput = styled.input`
 
 const ContactMessage = styled.input`
     width:70%;
+    margin-top:-6%;
     height:50%;
-    margin:5%;
     max-width:${props => props.width ? props.width : "50%"}
     min-height:25px;
     border-style:none;
@@ -63,6 +63,7 @@ const Contact = () => {
                 <ContactLabel>Email</ContactLabel>
                 <ContactInput ></ContactInput>
             </ContactBox>
+            <ContactMessage></ContactMessage>
         </ContactCont>
     );
 }
