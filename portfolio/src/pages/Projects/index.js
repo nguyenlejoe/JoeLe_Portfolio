@@ -30,7 +30,9 @@ export default function ProjectsPage(){
                         subhead="Water Usage Application"
                         bgimg="./MAJI.png"
                         delayAni="0.2"
-                        
+                        onClick={()=>{
+                            history.push("/Maji")
+                        }}
                         desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                     />
                 <ProjectCard 
@@ -44,10 +46,13 @@ export default function ProjectsPage(){
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                 />
                 <ProjectCard 
-                    title="Not So Sherlock"
-                    subhead="Kids Interactive Game"
-                    bgimg="./Sherlock.png"
+                    title="Inclusio"
+                    subhead="Team Managment Application"
+                    bgimg="./inclusio.png"
                     delayAni="0.6"
+                    onClick={()=>{
+                        history.push("/Inclusio")
+                    }}
                     desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                     
                 />

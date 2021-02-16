@@ -34,7 +34,6 @@ const NavButtons = styled.div`
     ${props => props.active === true && css`
         border-bottom: 2px solid #6AD2FF;
         color:#6AD2FF;
-        border-spacing: 25px;
     `}
   
 `;

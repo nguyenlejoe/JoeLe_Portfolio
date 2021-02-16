@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProjectLinks from '../../comps/ProjectLinks';
 
 const ContentCont = styled.div`
     display:flex;
@@ -11,11 +12,16 @@ const ContentCont = styled.div`
 `
 
 const ContentText = styled.div`
-    width:50%;
-    height:100%;
+    width:100%;
+    height:80%;
+    max-width:50%;
+    min-width:250px;
+    max-height:900px;
+    min-height:400px;
     display:flex;
     justify-content:center;
     flex-direction:column;
+
 `
 
 const ContentTitle = styled.div`
@@ -26,8 +32,12 @@ const ContentTitle = styled.div`
 `
 
 const ContentImg = styled.div`
-    width:25%;
+    width:55%;
     height:500px;
+    max-height:500px;
+    min-height:400px;
+    max-width:600px;
+    min-width:200px;
     background-size:contain;
     background-position:center;
     background-repeat:no-repeat; 
@@ -41,12 +51,35 @@ const ContentBox = styled.div`
     justify-content:center;
     align-items:center;
     margin-top:${props=>props.margin ? props.margin : ""};
+    background-color:${props=>props.bgcolor ? props.bgcolor : ""};
+    flex-wrap:wrap-reverse;
 `;
 
+const LinkCont = styled.div`
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    margin-top:${props=>props.margin ? props.margin : ""};
+    background-color:${props=>props.bgcolor ? props.bgcolor : ""};
+`;
+
+const ContentLinks = styled.div`
+    width:200px;
+    height:200px;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat; 
+    background-image:url(/${props=>props.bgimg ? props.bgimg : "none"});
+    margin: 2%;
+`
 
 
 
-const ProjectCont = ({bgimg1,bgimg2, text, title1, title2}) =>  { 
+
+
+const ProjectCont = ({bgimg1,bgimg2, text, title1, title2, link1, link2, visit}) =>  { 
     return (
         <ContentCont> 
 
@@ -65,6 +98,15 @@ const ProjectCont = ({bgimg1,bgimg2, text, title1, title2}) =>  {
                     {text}
                 </ContentText>
             </ContentBox>
+
+            <LinkCont margin="10%" bgcolor="#252525">
+                <ContentText>
+                    <ContentTitle><h3>Take a closer look at {visit}  </h3></ContentTitle>
+                </ContentText>
+               <ContentLinks bgimg={link1}></ContentLinks>
+               <ContentLinks bgimg={link2}></ContentLinks>
+            </LinkCont>
+              
         </ContentCont>   
     );
 }

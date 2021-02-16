@@ -6,6 +6,8 @@ import LandingPage from './pages/LandingPage';
 import ProjectPage from './pages/Projects';
 import ContactPage from './pages/Contact';
 import HomeChef from './pages/HomeChef';
+import Inclusio from './pages/Inclusio';
+import Maji from './pages/MAJI';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/Projects" exact component={ProjectPage}/>
         <Route path="/Contact" exact component={ContactPage}/>
         <Route path="/HomeChef" exact component={HomeChef}/>
+        <Route path="/Inclusio" exact component={Inclusio}/>
+        <Route path="/Maji" exact component={Maji}/>
       </Switch>
     </Router>
   );
