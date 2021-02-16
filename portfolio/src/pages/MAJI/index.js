@@ -34,7 +34,7 @@ export default function Maji(){
 
               <div className="ProjectDesc">
                   <ProjectDesc 
-                  bgimg="./Maji.png"
+                  bgimg="./MAJI.png"
                   text="
                   Home Chef is a home-made food marketplace for local exotic cuisine. We came up with the idea after seeing the numerous amounts of listings for homemade food on social media and other websites such as Facebook Marketplace, Craigslist, and even Instagram. 
                   Our objective is to create an environment that encourages home chefs to express and share their culture with others through food. By doing so, users have the opportunity to find food that they love, or explore and discover new cuisines from different backgrounds.
@@ -52,8 +52,8 @@ export default function Maji(){
                     text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
                     "
-                    bgimg1="./Maji2.png"
-                    bgimg2="./Maji3.png"
+                    bgimg1="./maji2.png"
+                    bgimg2="./maji3.png"
                     link1="./github.png"
                     link2="./heroku.png"
                     visit="HomeChef"
