@@ -80,6 +80,9 @@
 
 @media only screen and (max-width: 600px) {
     .Inclusio-Project{
+        background-size: cover;
+        background-position: center;
+        mix-blend-mode: overlay;
         .HeaderCont{
             position: sticky;
             top:0;

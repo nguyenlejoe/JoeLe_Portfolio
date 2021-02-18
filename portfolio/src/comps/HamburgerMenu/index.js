@@ -34,8 +34,8 @@ const MenuBox = styled.div`
     margin-left:10px;
     width:45vw;
     height:100vh;
-    background: rgba(0, 0, 0, 0.87);
-    border-radius: 30px 0px 0px 30px;
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
 `;
 
 const MenuTabs = styled.div`
