@@ -24,7 +24,6 @@ const ProjectCont = styled.div`
     align-items:center; 
     justify-content:center;
     margin:5%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.85));
 
     &:hover{
  

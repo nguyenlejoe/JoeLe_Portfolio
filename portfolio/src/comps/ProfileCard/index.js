@@ -63,15 +63,45 @@ const GraphCont = styled.div`
 
 const GraphBox = styled.div`
     height:10%;
-    width:${props=>props.width ? props.width : "0px"};
-    background-color:#6AD2FF;
+    width:100%;
+    // width:${props=>props.width ? props.width : "0px"};
+    background: rgba(0, 0, 0, 0.21);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
     margin-left:20px;
+
     
 `
 
+const GraphFill = styled.div`
+    height:100%;
+    width:${props=>props.width ? props.width : "0px"};
+    transition: all 1s ease;
+    background: rgba(106, 210, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+`
+
+
+
 
 const ProfileCard = ({text}) =>{
+
     
+    
+    const [GraphReact, setReact] = useState("0%");
+    const [GraphJavascript, setJavascript] = useState("0%");
+    const [GraphHTML, setHTML] = useState("0%");
+    const [GraphCSS, setCSS] = useState("0%");
+
+    useEffect(()=>{
+        setInterval(() => {
+            setReact("100%");
+            setJavascript("85%")
+            setHTML("75%")
+            setCSS("65%")
+        }, 750);
+    }, [])
 
     return (
         <ProfileCont>
@@ -85,10 +115,18 @@ const ProfileCard = ({text}) =>{
                 <label>CSS</label>
                 </TitleCont>
                  <GraphCont>
-                    <GraphBox width="100%"></GraphBox>
-                    <GraphBox width="90%"></GraphBox>
-                    <GraphBox width="90%"></GraphBox>
-                    <GraphBox width="70%"></GraphBox>
+                    <GraphBox>
+                        <GraphFill width={GraphReact}></GraphFill>
+                    </GraphBox>
+                    <GraphBox>
+                        <GraphFill width={GraphJavascript}></GraphFill>
+                    </GraphBox>
+                    <GraphBox>
+                        <GraphFill width={GraphHTML}></GraphFill>
+                    </GraphBox>
+                    <GraphBox>
+                        <GraphFill width={GraphCSS}></GraphFill>
+                    </GraphBox>
                 </GraphCont>
             </ContentCont>
         </ProfileCont>
