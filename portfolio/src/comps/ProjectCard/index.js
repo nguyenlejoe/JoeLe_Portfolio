@@ -15,8 +15,9 @@ const ProjectCont = styled.div`
     height:100%;
     max-width: 360px;
     max-height:600px;
-    background-color:#252525;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 51px;
     display:flex;
     flex-direction:column;

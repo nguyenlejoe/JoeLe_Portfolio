@@ -7,8 +7,8 @@ const ProfileCont = styled.div`
     min-width:300px;
     max-width:350px;
     height:100%;
-    background: #252525;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
     border-radius: 51px;
     display:flex;
     flex-direction:column;
@@ -35,11 +35,11 @@ const Avatar = styled.div`
 `;
 
 const ContentCont = styled.div`
-    background: #252525;
     height:200px;
     width:100%;
     display:flex;
     margin:10px;
+
 `;
 
 const TitleCont = styled.div` 
@@ -58,6 +58,7 @@ const GraphCont = styled.div`
     width:70%;
     height:100%;
     justify-content:space-between;
+    
 `
 
 const GraphBox = styled.div`
@@ -65,6 +66,7 @@ const GraphBox = styled.div`
     width:${props=>props.width ? props.width : "0px"};
     background-color:#6AD2FF;
     margin-left:20px;
+    
 `
 
 

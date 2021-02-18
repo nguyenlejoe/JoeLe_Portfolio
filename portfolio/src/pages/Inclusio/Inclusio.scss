@@ -1,7 +1,7 @@
 .Inclusio-Project{
     height: 100vh;
     width: 100vw;
-    background-color: #2C2C2C;
+    background-image: url('/images/auroa.png');
     color: white;
     overflow-x: hidden;
     
@@ -10,8 +10,6 @@
         position: sticky;
         top:0;
         height: 14%;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-        background-color:#252525;
         z-index: 2;
         :nth-child(2){
           font-size:25px;

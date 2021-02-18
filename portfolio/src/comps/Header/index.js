@@ -9,8 +9,8 @@ const HeaderCont = styled.div`
     display:flex;
     justify-content:flex-end;
     align-items:center;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-    background-color:#252525;
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
 `;
 
 const NavCont = styled.div`

@@ -6,7 +6,8 @@ const ProjectCont = styled.div`
     height:100%;
     max-height:100%;
     min-height:400px;
-    background-color:#252525;
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
     display:flex;
     flex-wrap:wrap;
     align-items:center; 

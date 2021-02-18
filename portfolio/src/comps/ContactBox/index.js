@@ -6,10 +6,9 @@ const ContactCont = styled.div`
     height:100%;
     max-width:60%;
     max-height:60%;
-    background-color:#252525;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(23, 23, 23, 0.35);
+    backdrop-filter: blur(55px);
     border-radius: 51px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.85));
     display:flex;
     justify-content: center;
     align-items:center;
