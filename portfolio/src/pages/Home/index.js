@@ -6,6 +6,7 @@ import Menu from '../../comps/HamburgerMenu';
 import Logo from '../../comps/Logo';
 import {motion} from "framer-motion";
 
+
 export default function HomePage(){
     
     const variants = {
@@ -55,12 +56,13 @@ export default function HomePage(){
                         initial="hidden"
                         animate="visible"
                     >
+                        
                         <div className="Name">Joe Le</div>
                         <div className="Position">Front-End Web Developer</div>
                         <div className="Bio"><p>An aspiring Front-End developer striving to join the ever going technology industry with an active passion for web/app development. Strong problem-solving and leadership skills from participating in multiple team projects. Hard working and is always willing to learn more.</p></div>
                         <div className="SocialLinks">
-                            <a href="https://github.com/nguyenlejoe" className="git"></a>
-                            <a href="https://www.linkedin.com/in/joe-tan-le/" className="linkedin"></a>
+                            <a href="https://github.com/nguyenlejoe" target="_blank"className="git"></a>
+                            <a href="https://www.linkedin.com/in/joe-tan-le/" target="_blank" className="linkedin"></a>
                         </div>
                     </motion.div>
 

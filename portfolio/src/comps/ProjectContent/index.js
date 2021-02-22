@@ -103,8 +103,8 @@ const ProjectCont = ({bgimg1,bgimg2, text1,text2, title1, title2, link1, link2, 
                 <ContentText>
                     <ContentTitle><h3>Take a closer look at {visit}  </h3></ContentTitle>
                 </ContentText>
-               <ContentLinks href={href1} bgimg={link1}></ContentLinks>
-               <ContentLinks href={href2} bgimg={link2}></ContentLinks>
+               <ContentLinks href={href1} target="_blank" bgimg={link1}></ContentLinks>
+               <ContentLinks href={href2} target="_blank" bgimg={link2}></ContentLinks>
             </LinkCont>
               
         </ContentCont>   
