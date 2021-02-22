@@ -52,16 +52,16 @@ const ProjectIcons = styled.div`
     background-image:url(/${props=>props.bgimg ? props.bgimg : "none"});
 `;
 
-const ProjectDesc = ({bgimg, text}) =>  { 
+const ProjectDesc = ({bgimg, text, icon1, icon2, icon3}) =>  { 
     return (
         <ProjectCont> 
             <ProjectImg bgimg={bgimg}></ProjectImg>
             <ProjectText>
                 {text}
                 <ProjectTools>
-                    <ProjectIcons bgimg="./react.png"/>
-                    <ProjectIcons bgimg="./javascript.png"/>
-                    <ProjectIcons bgimg="./sass.png"/>
+                    <ProjectIcons bgimg={icon1}/>
+                    <ProjectIcons bgimg={icon2}/>
+                    <ProjectIcons bgimg={icon3}/>
                 </ProjectTools>
             </ProjectText>
         </ProjectCont>

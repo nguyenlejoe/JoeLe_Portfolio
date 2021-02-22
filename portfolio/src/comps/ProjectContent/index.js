@@ -65,7 +65,7 @@ const LinkCont = styled.div`
     background-color:${props=>props.bgcolor ? props.bgcolor : ""};
 `;
 
-const ContentLinks = styled.div`
+const ContentLinks = styled.a`
     width:200px;
     height:200px;
     background-size:contain;
@@ -79,14 +79,14 @@ const ContentLinks = styled.div`
 
 
 
-const ProjectCont = ({bgimg1,bgimg2, text, title1, title2, link1, link2, visit}) =>  { 
+const ProjectCont = ({bgimg1,bgimg2, text1,text2, title1, title2, link1, link2, href1, href2, visit}) =>  { 
     return (
         <ContentCont> 
 
             <ContentBox>
                 <ContentText>
                 <ContentTitle><h3>{title1}</h3></ContentTitle>
-                    {text}
+                    {text1}
                 </ContentText>
                 <ContentImg bgimg={bgimg1}></ContentImg>
             </ContentBox>
@@ -95,7 +95,7 @@ const ProjectCont = ({bgimg1,bgimg2, text, title1, title2, link1, link2, visit})
                 <ContentImg bgimg={bgimg2}></ContentImg>
                 <ContentText>
                 <ContentTitle><h3>{title2}</h3></ContentTitle>
-                    {text}
+                    {text2}
                 </ContentText>
             </ContentBox>
 
@@ -103,8 +103,8 @@ const ProjectCont = ({bgimg1,bgimg2, text, title1, title2, link1, link2, visit})
                 <ContentText>
                     <ContentTitle><h3>Take a closer look at {visit}  </h3></ContentTitle>
                 </ContentText>
-               <ContentLinks bgimg={link1}></ContentLinks>
-               <ContentLinks bgimg={link2}></ContentLinks>
+               <ContentLinks href={href1} bgimg={link1}></ContentLinks>
+               <ContentLinks href={href2} bgimg={link2}></ContentLinks>
             </LinkCont>
               
         </ContentCont>   

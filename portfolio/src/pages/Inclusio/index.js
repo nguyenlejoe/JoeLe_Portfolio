@@ -36,27 +36,24 @@ export default function Inclusio(){
                   <ProjectDesc 
                   bgimg="./inclusio.png"
                   text="
-                  Home Chef is a home-made food marketplace for local exotic cuisine. We came up with the idea after seeing the numerous amounts of listings for homemade food on social media and other websites such as Facebook Marketplace, Craigslist, and even Instagram. 
-                  Our objective is to create an environment that encourages home chefs to express and share their culture with others through food. By doing so, users have the opportunity to find food that they love, or explore and discover new cuisines from different backgrounds.
-                  
-                  We are also providing an opportunity to vendors who may not be in a financial state to open a restaurant and sell food or either have lost their restaurant/business. Chefs can also cook on their own schedule giving them the freedom to work stress-free and at their own pace.
-                  
-                  Our geographical community will be the Burnaby area since there is no app similar to this around the Lower Mainland and we saw that as a gap to fill. 
+                  Inclusio is an application catered to help project managers keep track of their team and their availability. Our team researched and found that leading a team can be challenging because it can be overwhelming to manage everyone and their tasks. We thought of a solution and developed an application that could aid project managers and their team.  Inclusio’s features include adding members, deleting them and editing their status. The application can keep track of a members status on the task they are assigned to. Users can also easily check each member’s profile to see what they specialize in or what department they are from.
                   "
+                  icon1="./react.png"
+                  icon2="./javascript1.png"
+                  icon3="./sass.png"
                   />
               </div>
               <div className="MyRole">
                 <ProjectCont
                     title1="My Role"
                     title2="The Development Process"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    "
+                    text1="My role for Inclusio was lead developer. During the development phase I assigned certain tasks to each group member depending on their level of programming skills. As a team, we all contributed to creating the components but since I was the lead developer, I had to focus on creating the database. I was also in charge of helping the group members with debugging and connecting the front-end with the back-end."
+                    text2="During the design phase, I created the database so that we could store users that were added onto the list. After creating the backend, I developed end points for each action that was needed for Inclusio’s features. The actions were, pulling all users from the database, creating new members, and editing them. I then assisted my team with connecting the front-end with the newly created back-end. Using axios and mapping, we pulled the data from the server and displayed them for the user on the application."
                     bgimg1="./inclusio2.png"
                     bgimg2="./inclusio3.png"
-                    link1="./github.png"
-                    link2="./heroku.png"
+                    link1="./githubwhite.png"
                     visit="Inclusio"
+                    href1="https://github.com/nguyenlejoe/Inclusio_DynamicContent"
                 />
               </div>  
 

@@ -43,20 +43,24 @@ export default function HomeChef(){
                   
                   Our geographical community will be the Burnaby area since there is no app similar to this around the Lower Mainland and we saw that as a gap to fill. 
                   "
+                  icon1="./react.png"
+                  icon2="./javascript1.png"
+                  icon3="./sass.png"
                   />
               </div>
               <div className="MyRole">
                 <ProjectCont
                     title1="My Role"
                     title2="The Development Process"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    "
+                    text1="My role during the HomeChef project was lead developer. I was assigned this role because of my previous experiences in programming and knowledge in back-end development. I assigned the team with tasks such as creating components and putting together the different pages based on the mock up designs. My responsibilities were to overview my team’s code and help them debug any issues. I also was in charge of communicating with our full-stack developer and connecting the front-end with the database. "
+                    text2="After assisting the design team with creating the final mock-up for HomeChef, We split up the components that needed to be created amongst all members of the team. I assisted them with debugging and creating the pages. When all the static pages were done, I turned my focus to developing the main features which were, logging in/creating accounts, adding items to the cart, and filtering through different types of products. Since I have experience with back-end development, I was in charge of communicating with our full-stack and connecting the front-end with the database he had created."
                     bgimg1="./finalhom1.png"
                     bgimg2="./finalhome2.png"
-                    link1="./github.png"
+                    link1="./githubwhite.png"
                     link2="./heroku.png"
                     visit="HomeChef"
+                    href1="https://github.com/nguyenlejoe/HomeChef"
+                    href2="https://home-chef-idsp.herokuapp.com/"
                 />
               </div>  
 

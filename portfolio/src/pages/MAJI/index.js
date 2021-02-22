@@ -35,28 +35,25 @@ export default function Maji(){
               <div className="ProjectDesc">
                   <ProjectDesc 
                   bgimg="./MAJI.png"
-                  text="
-                  Home Chef is a home-made food marketplace for local exotic cuisine. We came up with the idea after seeing the numerous amounts of listings for homemade food on social media and other websites such as Facebook Marketplace, Craigslist, and even Instagram. 
-                  Our objective is to create an environment that encourages home chefs to express and share their culture with others through food. By doing so, users have the opportunity to find food that they love, or explore and discover new cuisines from different backgrounds.
-                  
-                  We are also providing an opportunity to vendors who may not be in a financial state to open a restaurant and sell food or either have lost their restaurant/business. Chefs can also cook on their own schedule giving them the freedom to work stress-free and at their own pace.
-                  
-                  Our geographical community will be the Burnaby area since there is no app similar to this around the Lower Mainland and we saw that as a gap to fill. 
-                  "
+                  text="Maji is similar to a carbon footprint application but instead, calculates water usage. Majority of society will use water everyday not knowing how much they use and how it affects the world around them. Since there is a water crisis in many parts of the world like in Uganda, our team thought it would be a good idea to create an application to spread awareness. This app will ask the user a series of questions and will calculate how much water in gallons they used. Depending on the number, the application will provide advice on how to use less water and how it will impact countries who have a water crisis."
+                  icon1="./javascript1.png"
+                  icon2="./css.png"
+                  icon3="./html.png"
                   />
               </div>
               <div className="MyRole">
                 <ProjectCont
                     title1="My Role"
                     title2="The Development Process"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    "
+                    text1="My role was project manager and lead developer for the Maji project. As the project manager, I was responsible for organizing daily meetings and delegating roles and tasks to each member. As for the lead developer role, I took on the main features of the application and helped the other group members with any problems that they had. Checking the overall code and debugging was also one of the main responsibilities I had."
+                    text2="After creating the high fidelity mockup from our research and user testings, we began developing the application. I assigned tasks such as css styling and creating pages to my team members while I developed the app’s major feature. During the development phase, I had to think about all the possible answers the user could get depending on what answers they chose. My researcher gave me a tree of all possible results to how much water the users consumed and with that, I integrated it within the application."
                     bgimg1="./maji2.png"
                     bgimg2="./maji3.png"
-                    link1="./github.png"
+                    link1="./githubwhite.png"
                     link2="./heroku.png"
-                    visit="HomeChef"
+                    visit="Maji"
+                    href1="https://github.com/noahmah/MajiWater"
+                    href2="https://majiwaterapp.herokuapp.com/"
                 />
               </div>  
 

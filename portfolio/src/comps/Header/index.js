@@ -68,7 +68,7 @@ const HeaderComp = ({text, HomeActive, ProjectsActive, ContactActive, ResumeActi
                     <NavButtons active={ContactActive}>Contact</NavButtons>
                 </Link>
 
-                <Link style={{ textDecoration: 'none' , color:'white' }} to="/">
+                <Link style={{ textDecoration: 'none' , color:'white' }} to="/Resume">
                     <NavButtons active={ResumeActive}>Resume</NavButtons>
                 </Link>
             </NavCont>

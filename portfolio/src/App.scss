@@ -1,8 +1,45 @@
 @import './pages/Home/Home.scss';
-@import './pages/LandingPage/Landing.scss'; 
 @import './pages/Projects/Project.scss'; 
 @import './pages/Contact/Contact.scss';
 @import './pages/HomeChef/HomeChef.scss';
 @import './pages/Inclusio/Inclusio.scss';
 @import './pages/MAJI/Maji.scss';
+@import './pages/Resume/resume.scss';
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/**
+ * Mixin scrollbar
+ */
+ @mixin scrollbar($size, $primary, $secondary) {
+    ::-webkit-scrollbar {
+          width:  $size;
+          height: $size;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+          background: $primary;
+      }
+  
+      ::-webkit-scrollbar-track {
+          background: $secondary;
+      }
+    
+    // For Internet Explorer
+    body {
+      scrollbar-face-color: $primary;
+      scrollbar-track-color: $secondary;
+    }
+  }
+  
+  /**
+   * Call the damn thing
+   */
+  @include scrollbar(.5em, #24BDFF, #4F4E4E);
+  
+  /** 
+   * Force scrollbars
+   */
+ 

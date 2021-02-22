@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const ContactCont = styled.div`
+import {motion} from "framer-motion";
+const ContactCont = styled(motion.div)`
     width:100%;
     height:100%;
     max-width:60%;
@@ -52,8 +52,31 @@ const ContactMessage = styled.input`
 
 
 const Contact = () => {
+
+    const variants = {
+        hidden:{
+            opacity:0,
+            y: '-30vh'
+        },
+        visible:{
+            opacity:1,
+            y: '2vh',
+            duration:1,
+            transition: {
+                type:"spring",
+                stiffness:90,
+                mass:0.8,
+                damping:9
+            }
+        },
+    }
+
     return (
-        <ContactCont>
+        <ContactCont
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        >
             <ContactBox>
                 <ContactLabel>Name</ContactLabel>
                 <ContactInput ></ContactInput>

@@ -1,4 +1,4 @@
-.Home{
+.Resume{
     height: 100vh;
     width: 100vw;
     background-image: url('/images/auroa.png');
@@ -10,6 +10,7 @@
         position: sticky;
         top:0;
         height: 14%;
+        z-index: 1;
         :nth-child(2){
           font-size:25px;
         }
@@ -31,64 +32,19 @@
         width: 100%;
         justify-content: space-around;
 
-            .Title{
-                width:50%;
-                min-width:300px;;
-                max-width:800px;
-                
-                .Name{
-                    font-size: 96px;
-                }
-                .Position{
-                    margin-top: -10px;;
-                    font-size: 48px;  
-                }
-                .Bio{
-                    font-size: 18px;  
-                    
-                }
-                .SocialLinks{
-                    width:100%;
-                    display:flex;
-                    justify-content: flex-start;
-
-                    .git{
-                        width:60px;
-                        height:60px;
-                        background-image: url('/images/githubwhite.png');
-                        background-size: contain;
-                        margin: 1.5% 2% 0 0;
-                    }
-
-                    .linkedin{
-                        width:50px;
-                        height:50px;
-                        background-image: url('/images/linkedinwhite.png');
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        margin-top: 2%;
-                    }
-                }
-            
-        }
-
-        .Competencies{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width:60%;
-            max-height:800px;
-            min-width:300px;;
-            max-width:600px;
-            margin-top:2%;
-
+        .ResumeCont{
+            height:60em;
+            width:100%;
+            background-image: url('/images/resumenew.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 0;
         }
 
     }
 }
-
 @media only screen and (max-width: 600px) {
-    .Home{
+    .Resume{
         background-size: cover;
         background-position: center;
         mix-blend-mode: overlay;
@@ -153,7 +109,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .Home{
+    .Resume{
         
         .Content{
             
