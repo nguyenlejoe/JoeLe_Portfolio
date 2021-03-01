@@ -4,6 +4,7 @@ import Header from '../../comps/Header';
 import Contact from '../../comps/ContactBox';
 import Logo from '../../comps/Logo';
 import Menu from '../../comps/HamburgerMenu';
+import Button from '../../comps/Button';
 
 export default function ContactPage(){
     return (
@@ -17,6 +18,7 @@ export default function ContactPage(){
                 </div>
             <div className="Content">
                 <Contact></Contact>
+                            
             </div>
         </div>
     );

@@ -26,11 +26,16 @@
     .Content{
         height: 80%;
         display:flex;
+        flex-direction: column;
         align-items:center;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
 
+        .button{
+            position: relative;
+            top:5%;
+        }
 
     }
 }

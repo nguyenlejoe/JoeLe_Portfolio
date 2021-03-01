@@ -43,6 +43,7 @@ export default function ResumePage(){
                 initial="hidden"
                 animate="visible"
                className="ResumeCont"></motion.div>
+               <a href="https://joetanle.com/Portfolio/JoeLe_Resume.pdf" target="_blank"><div className="button">PDF Version</div></a>
             </div>
         </div>
     );

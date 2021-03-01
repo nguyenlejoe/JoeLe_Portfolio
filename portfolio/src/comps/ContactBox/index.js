@@ -1,54 +1,77 @@
 import React from 'react';
 import styled from 'styled-components';
 import {motion} from "framer-motion";
+
 const ContactCont = styled(motion.div)`
-    width:100%;
-    height:100%;
-    max-width:60%;
-    max-height:60%;
+    width: 675px;
+    height: 675px;
     background: rgba(23, 23, 23, 0.35);
     backdrop-filter: blur(55px);
     border-radius: 51px;
     display:flex;
-    justify-content: center;
+    flex-direction:column;
     align-items:center;
-    flex-wrap: wrap;
+    justify-content:center;
+    
 `;
 
-const ContactBox = styled.div`
-    width:33%;
-    height:25%;
-    margin:2%;
-`;
-
-const ContactLabel = styled.div`
-
-`;
-
-const ContactInput = styled.input`
+const ContactInput = styled.div`
     width:100%;
-    height:30%;
-    margin-top:2%;
-    max-width:${props => props.width ? props.width : "50%"}
-    min-height:25px;
-    border-style:none;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10), 0px 0px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    padding-left:15px;
+    height:15%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
 
-`;
+`
 
-const ContactMessage = styled.input`
-    width:70%;
-    margin-top:-6%;
-    height:50%;
-    max-width:${props => props.width ? props.width : "50%"}
-    min-height:25px;
+const MessageCont = styled.div`
+    width:100%;
+    height:45%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+`
+
+const InputBox = styled.input`
     border-style:none;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.10), 0px 0px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    padding-left:15px;
-`;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width:75%;
+    height:40%;
+`
+
+const InputLabel = styled.label`
+    margin: 2% 0 2% 0;
+    font-size:20px;
+    position:relative;
+    right:200px;
+`
+
+const InputMessage = styled.input`
+    border-style:none;
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width:75%;
+    height:70%;
+`
+
+const ContactButton = styled.div`
+    width: 532px;
+    height: 60px;
+    background: rgba(23, 23, 23, 0.7);
+    backdrop-filter: blur(55px);
+    border-radius: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    margin-top:4%;
+    font-size:20px;
+`
 
 
 const Contact = () => {
@@ -77,15 +100,23 @@ const Contact = () => {
         initial="hidden"
         animate="visible"
         >
-            <ContactBox>
-                <ContactLabel>Name</ContactLabel>
-                <ContactInput ></ContactInput>
-            </ContactBox>
-            <ContactBox>
-                <ContactLabel>Email</ContactLabel>
-                <ContactInput ></ContactInput>
-            </ContactBox>
-            <ContactMessage></ContactMessage>
+        <ContactInput>
+            <InputLabel>Email</InputLabel>
+            <InputBox></InputBox>
+        </ContactInput>
+
+        <ContactInput>
+            <InputLabel>Subject</InputLabel>
+            <InputBox></InputBox>
+        </ContactInput>
+
+        <MessageCont>
+            <InputLabel>Message</InputLabel>
+            <InputMessage></InputMessage>
+        </MessageCont>
+
+        <ContactButton>Submit</ContactButton>
+        
         </ContactCont>
     );
 }
