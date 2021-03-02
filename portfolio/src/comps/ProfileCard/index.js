@@ -27,8 +27,8 @@ const Avatar = styled.div`
     height: 220px;
     background-color:white;
     border-radius:200px;
-    background-image:url(/me.png);
-    background-size:cover;
+    background-image:url(/me2.jpg);
+    background-size:140%;
     background-position:center;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     
