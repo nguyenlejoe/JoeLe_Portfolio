@@ -26,12 +26,12 @@ export default function ProjectsPage(){
             </div>
             <div className="Content">
                     <ProjectCard 
-                        title="MAJI"
-                        subhead="Water Usage Application"
-                        bgimg="./MAJI.png"
+                        title="BeatShare"
+                        subhead="Social Media Clone"
+                        bgimg="./beat1.png"
                         delayAni="0.2"
                         onClick={()=>{
-                            history.push("/Maji")
+                            history.push("/BeatShare")
                         }}
                         desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type specimen book. It has survived not only five centuries, but also the le hing software like Aldus PageMaker including versions of Lorem Ipsum. "
                     />

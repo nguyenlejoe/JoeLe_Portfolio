@@ -7,6 +7,7 @@ import ContactPage from './pages/Contact';
 import HomeChef from './pages/HomeChef';
 import Inclusio from './pages/Inclusio';
 import Maji from './pages/MAJI';
+import BeatShare from './pages/BeatShare';
 import Resume from './pages/Resume';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/HomeChef" exact component={HomeChef}/>
         <Route path="/Inclusio" exact component={Inclusio}/>
         <Route path="/Maji" exact component={Maji}/>
+        <Route path="/BeatShare" exact component={BeatShare}/>
         <Route path="/Resume" exact component={Resume}/>
       </Switch>
     </Router>

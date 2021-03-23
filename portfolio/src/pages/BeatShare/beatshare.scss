@@ -1,0 +1,276 @@
+.BeatShare-Project{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/auroa.png');
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+    
+
+    .HeaderCont{
+        position: sticky;
+        top:0;
+        height: 14%;
+        z-index: 2;
+        :nth-child(2){
+          font-size:25px;
+        }
+        .NavBar{
+            height:100%;
+        }
+
+        .Menu{
+            display: none;
+        }
+    }
+
+    
+    
+    .Content{
+        margin-top: -10%;
+        height: 100%;
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+        .Header{
+            margin-top: 10%;
+            width: 100%;
+            height:50%;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            
+            h1{
+                font-size: 62px;
+                font-weight:normal;
+                margin:0;
+            }
+    
+            h3{
+                font-size: 24px;
+                font-weight:normal;
+                margin:4px;
+            }
+    
+            hr{
+                width:20%;
+                border: 1px solid #24BDFF;
+            
+            }
+        }
+
+        .ProjectDesc{
+            height:50%;
+            width:100%;
+        }
+
+        .MyRole{
+            margin-top: 5%;
+            height:50%;
+            width:100%;
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .BeatShare-Project{
+        background-size: cover;
+        background-position: center;
+        mix-blend-mode: overlay;
+        .HeaderCont{
+            position: sticky;
+            top:0;
+        
+            .NavBar{
+                display:none;
+            }
+            .Menu{
+                height: 100%;
+                justify-content: flex-end;
+                margin-right:5%;
+                align-items: center;
+                display: flex;
+
+                .Logo{
+                    position: relative;
+                    right:70%;
+                    :nth-child(1){
+                        width:80px;
+                        height:80px;
+                        text-align: center;
+                        padding-top:10px;
+                        font-size:50px;
+                    }
+                }   
+            }
+        }
+
+        .Content{
+            margin-top: -10%;
+        height: 100%;
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+        .Header{
+            margin-top: 10%;
+            width: 100%;
+            height:50%;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            
+            h1{
+                font-size: 62px;
+                font-weight:normal;
+                margin:0;
+            }
+    
+            h3{
+                font-size: 24px;
+                font-weight:normal;
+                margin:4px;
+            }
+    
+            hr{
+                width:20%;
+                border: 1px solid #24BDFF;
+            
+            }
+        }
+
+
+        .ProjectDesc{
+            height:90%;
+            width:100%;
+            margin-bottom: 50%;
+
+            :nth-child(2){
+                justify-content:center;
+                margin-top: 1em;
+            }
+        }
+
+        .MyRole{
+            margin-top: 50em;
+            height:70%;
+            width:100%;
+            
+            :nth-child(2){
+                justify-content:center;
+                margin-top: 40em;
+            }
+        }
+
+        }
+        
+
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .BeatShare-Project{
+        .HeaderCont{
+            position: sticky;
+            top:0;
+        
+            .NavBar{
+                display:none;
+            }
+            .Menu{
+                height: 100%;
+                justify-content: flex-end;
+                margin-right:5%;
+                align-items: center;
+                display: flex;
+
+                .Logo{
+                    position: relative;
+                    right:70%;
+                    :nth-child(1){
+                        width:80px;
+                        height:80px;
+                        text-align: center;
+                        padding-top:10px;
+                        font-size:50px;
+                    }
+                }   
+            }
+        }
+
+        .Content{
+        margin-top: -10%;
+        height: 100%;
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+
+        .Header{
+            margin-top: 10%;
+            width: 100%;
+            height:50%;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            
+            h1{
+                font-size: 62px;
+                font-weight:normal;
+                margin:0;
+            }
+    
+            h3{
+                font-size: 24px;
+                font-weight:normal;
+                margin:4px;
+            }
+    
+            hr{
+                width:20%;
+                border: 1px solid #24BDFF;
+            
+            }
+        }
+
+
+        .ProjectDesc{
+            height:90%;
+            width:100%;
+            margin-bottom: 50%;
+
+            :nth-child(1){
+                justify-content:center;
+
+            }
+        }
+
+        .MyRole{
+            margin-top: 50em;
+            height:70%;
+            width:100%;
+            
+            :nth-child(2){
+                justify-content:center;
+                margin-top: 40em;
+            }
+        }
+
+        }
+        
+
+    }
+}
